@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+	<head lang="ru">
+		<title>Новости культуры</title>
+		<link rel="stylesheet" type="text/css" href="css/style.min.css" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,800;0,900;1,700;1,800&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header class="page-header">
+			<h1 class="page-header__title">Новости культуры</h1>
+			<button
+				class="page-header__but-menu page-header__but-menu--open page-header__but-menu--no-js"
+			></button>
+			<ul
+				class="page-header__menu page-header__menu--close page-header__menu--no-js site-list"
+			>
+				<li class="site-list__item">
+					<a href="#" class="site-list__link">новости</a>
+				</li>
+				<li class="site-list__item">
+					<a href="#" class="site-list__link">обзоры</a>
+				</li>
+				<li class="site-list__item">
+					<a href="#" class="site-list__link">музыка</a>
+				</li>
+				<li class="site-list__item">
+					<a href="#" class="site-list__link">архитектура</a>
+				</li>
+				<li class="site-list__item">
+					<a href="#" class="site-list__link">кино</a>
+				</li>
+				<li class="site-list__item">
+					<a href="#" class="site-list__link">театр</a>
+				</li>
+				<li class="site-list__item">
+					<a href="#" class="site-list__link">литература</a>
+				</li>
+				<li class="site-list__item">
+					<a href="#" class="site-list__link">религия</a>
+				</li>
+				<li class="site-list__item">
+					<a href="#" class="site-list__link">живопись</a>
+				</li>
+			</ul>
+			<section class="page-header__article-list article-list slider">
+				<div class="slider__wrapper">
+					<ul class="slider__items" id="articleInsert">
+						<!-- содержимое вставится через template.js -->
+					</ul>
+				</div>
+				<button
+					class="slider__control slider__control_prev article-list__control article-list__control_prev"
+				>
+					Предыдущая
+				</button>
+				<button
+					class="slider__control slider__control_next article-list__control article-list__control_next"
+				>
+					Следущая
+				</button>
+			</section>
+		</header>
+		<main class="page-main">
+			<section class="page-main__news news">
+				<h2 class="news__title">новости</h2>
+				<ul class="news__list" id="newsInsert">
+					<!-- содержимое вставится через template.js -->
+				</ul>
+			</section>
+			<section class="page-main__reviaws reviaws">
+				<h2 class="reviaws__title">обзоры</h2>
+				<ul class="reviaws__list" id="reviawsInsert">
+					<!-- содержимое вставится через template.js -->
+				</ul>
+				<div class="reviaws__indicators">
+					<button class="reviaws__button reviaws__button--prev">
+						<span class="visually-hidden">предидущий</span>
+					</button>
+
+					<ol class="reviaws__indicator-list">
+						<li class="reviaws__indicator-item reviaws__indicator-item--active">
+							1
+						</li>
+						<li class="reviaws__indicator-item">2</li>
+						<li class="reviaws__indicator-item">3</li>
+						<li class="reviaws__indicator-item">...</li>
+						<li class="reviaws__indicator-item">11</li>
+					</ol>
+					<button class="reviaws__button reviaws__button--next">
+						<span class="visually-hidden">следующий</span>
+					</button>
+				</div>
+			</section>
+			<section class="page-main__ballet ballet">
+				<picture>
+					<source media="(min-width: 1440px)" srcset="img/twine-desktop.jpg" />
+					<img
+						srcset="img/twine-mobile.jpg, img/twine-mobile@2x.jpg 2x"
+						alt="балерина на шпагате"
+						class="ballet__img"
+						width="320"
+						height="176"
+					/>
+				</picture>
+				<div class="ballet__text-wrapper">
+					<h2 class="ballet__title">Ох, уж этот балет</h2>
+					<a href="#" class="ballet__link link">смотреть</a>
+				</div>
+			</section>
+			<section class="page-main__link-article link-article slider">
+				<div class="slider__wrapper">
+					<ul class="link-article__list slider__items">
+						<!-- содержимое вставится через template.js -->
+					</ul>
+				</div>
+				<button
+					class="link-article__conrtol link-article__conrtol--prev slider__control slider__control_prev"
+				>
+					<span class="visually-hidden">Предыдущая</span>
+				</button>
+				<button
+					class="link-article__conrtol link-article__conrtol--next slider__control slider__control_next"
+				>
+					<span class="visually-hidden">Следущая</span>
+				</button>
+			</section>
+			<section class="page-main__link-event link-event">
+				<ul class="link-event__list">
+					<!-- содержимое вставится через template.js -->
+				</ul>
+			</section>
+		</main>
+		<footer class="page-footer">
+			<h1 class="page-footer__title">Новости культуры</h1>
+			<ul class="page-footer__menu site-list">
+				<li class="site-list__item">
+					<a href="#" class="site-list__link">новости</a>
+				</li>
+				<li class="site-list__item">
+					<a href="#" class="site-list__link">обзоры</a>
+				</li>
+				<li class="site-list__item">
+					<a href="#" class="site-list__link">музыка</a>
+				</li>
+				<li class="site-list__item">
+					<a href="#" class="site-list__link">архитектура</a>
+				</li>
+				<li class="site-list__item">
+					<a href="#" class="site-list__link">кино</a>
+				</li>
+				<li class="site-list__item">
+					<a href="#" class="site-list__link">театр</a>
+				</li>
+				<li class="site-list__item">
+					<a href="#" class="site-list__link">литература</a>
+				</li>
+				<li class="site-list__item">
+					<a href="#" class="site-list__link">религия</a>
+				</li>
+				<li class="site-list__item">
+					<a href="#" class="site-list__link">живопись</a>
+				</li>
+			</ul>
+		</footer>
+		<template>
+			<li id="templateArticle" class="article-list__item slider__item article">
+				<picture>
+					<source media="(min-width: 760px)" srcset="" />
+					<img class="article__img" srcset="" width="320" height="372" />
+				</picture>
+				<h2 class="article__titel"></h2>
+				<p class="article__text"></p>
+			</li>
+
+			<li id="templateNews" class="news__item">
+				<img class="news__item-img" width="127" height="91" />
+				<div class="news__item-description">
+					<h3 class="news__item-title"></h3>
+					<p class="news__item-text"></p>
+				</div>
+			</li>
+
+			<li class="reviaws__item">
+				<img class="reviaws__item-img" width="288" height="203" />
+				<h3 class="reviaws__item-title"></h3>
+				<p class="reviaws__item-text"></p>
+			</li>
+
+			<li class="link-article__item slider__item">
+				<img class="link-article__img" width="288" height="146" />
+				<h3 class="link-article__title"></h3>
+				<a class="link-article__link">смотреть</a>
+			</li>
+
+			<li class="link-event__item">
+				<img class="link-event__img" width="288" height="310" />
+				<h3 class="link-event__title"></h3>
+				<a class="link-event__link link">смотреть</a>
+			</li>
+		</template>
+		<script type="text/javascript" src="js/template.min.js"></script>
+		<script type="text/javascript" src="js/navMenuScript.min.js"></script>
+		<script type="text/javascript" src="js/slider.min.js"></script>
+	</body>
+</html>
