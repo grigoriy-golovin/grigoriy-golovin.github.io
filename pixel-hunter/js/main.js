@@ -1255,20 +1255,27 @@
     static start() {
       window
           .fetch(
-            `https://intensive-ecmascript-server-btfgudlkpi.now.sh/pixel-hunter/questions`
+              `https://intensive-ecmascript-server-btfgudlkpi.now.sh/pixel-hunter/questions`,
+              {
+                method: 'GET',
+                mode: 'no-cors',
+              }
           )
           .then((response) => {
             if (response.ok) {
               return response;
             } else {
-              throw new Error(response.statysText);
+              throw new Error(response.statys);
             }
           })
           .then((response) => response.json())
           .then((data) => setDataQuestion(data))
           .then((data) => console.log(data))
           .then(() => Application.showWelcome())
-          .catch((error) => console.error(error));
+          .catch((error) => {
+            console.error(`НЕ ПОЛУЧИЛОСЬ ПОЛУЧИТЬ ДАННЫЕ С СЕРВЕРА ОШИБКА:(${error}), ЗАПУСКАЮ ИГРУ С "МОКОВЫМИ" ДАННЫМИ`);
+            Application.showWelcome();
+          });
     }
 
     static showWelcome() {
@@ -1291,35 +1298,41 @@
     static post(model) {
       window
         .fetch(
-          `https://intensive-ecmascript-server-btfgudlkpi.now.sh/pixel-hunter/stats/:57943689-:${model.name}`,
-          {
-            method: `POST`,
-            headers: {
-              "Content-Type": "application/json;charset=utf-8",
-            },
-            body: JSON.stringify(model.playerResponses),
-          }
+            `https://intensive-ecmascript-server-btfgudlkpi.now.sh/pixel-hunter/stats/:57943689-:${model.name}`,
+            {
+              method: `POST`,
+              headers: {
+                "Content-Type": "application/json;charset=utf-8",
+              },
+              body: JSON.stringify(model.playerResponses),
+            }
         )
         .then(() => Application.loader(model))
-        .catch((error) => console.error(error));
+        .catch((error) => {
+          console.error(`НЕ УДАЛОСЬ ОТПРАВИТЬ ДАННЫЕ НА СЕРВЕР, ОШИБКА: (${error}) ПЕРЕХОДИМ В БЕЗСЕРВЕРНЫЙ РЕЖИМ`);
+          Application.showStats([model.playerResponses]);
+        });
     }
 
     static loader(model) {
       window
         .fetch(
-          `https://intensive-ecmascript-server-btfgudlkpi.now.sh/pixel-hunter/stats/:57943689-:${model.name}`
+            `https://intensive-ecmascript-server-btfgudlkpi.now.sh/pixel-hunter/stats/:57943689-:${model.name}`
         )
         .then((response) => {
           if (response.ok) {
             return response;
           } else {
-            throw new Error(response.statysText);
+            throw new Error(response.statys);
           }
         })
         .then((response) => response.json())
         .then((data) => data.reverse())
         .then((data) => Application.showStats(data))
-        .catch((error) => console.error(error));
+        .catch((error) => {
+          console.error(`НЕ УДАЛОСЬ ПОЛУЧИТЬ ДАННЫЕ С СЕРВЕРА, ОШИБКА: (${error}) ПЕРЕХОДИМ В БЕЗСЕРВЕРНЫЙ РЕЖИМ`);
+          Application.showStats(model.playerResponses);
+        });
     }
   }
 
