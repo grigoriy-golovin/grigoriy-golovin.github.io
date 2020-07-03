@@ -772,13 +772,9 @@
           "type": "photo"
         },
         {
-          "image": {
-            "url": "https://k42.kn3.net/CF42609C8.jpg",
-            "width": 505,
-            "height": 700
-          },
-          "type": "painting"
-        }
+          type: `painting`,
+          image: {width: 700, height: 539, url: "https://k37.kn3.net/51254FE87.jpg"},
+        },
       ]
     },
     {
@@ -786,13 +782,9 @@
       "question": "Угадай, фото или рисунок?",
       "answers": [
         {
-          "image": {
-            "url": "https://i.imgur.com/DiHM5Zb.jpg",
-            "width": 474,
-            "height": 700
-          },
-          "type": "photo"
-        }
+          type: `painting`,
+          image: {width: 600, height: 831, url: "https://k42.kn3.net/CF42609C8.jpg"},
+        },
       ]
     },
     {
@@ -800,29 +792,17 @@
       "question": "Найдите рисунок среди изображений",
       "answers": [
         {
-          "image": {
-            "url": "https://i.imgur.com/DiHM5Zb.jpg",
-            "width": 474,
-            "height": 700
-          },
-          "type": "photo"
+          type: `photo`,
+          image: {width: 1080, height: 720, url: "http://i.imgur.com/1KegWPz.jpg"},
         },
         {
-          "image": {
-            "url": "https://k32.kn3.net/5C7060EC5.jpg",
-            "width": 933,
-            "height": 700
-          },
-          "type": "painting"
+          type: `painting`,
+          image: {width: 600, height: 765, url: "https://k38.kn3.net/AD92BA712.jpg"},
         },
         {
-          "image": {
-            "url": "https://i.imgur.com/DKR1HtB.jpg",
-            "width": 264,
-            "height": 700
-          },
-          "type": "photo"
-        }
+          type: `photo`,
+          image: {width: 950, height: 534, url: "https://i.imgur.com/NXlVX48.png"},
+        },
       ]
     },
     {
@@ -830,29 +810,17 @@
       "question": "Найдите фото среди изображений",
       "answers": [
         {
-          "image": {
-            "url": "https://k42.kn3.net/D2F0370D6.jpg",
-            "width": 468,
-            "height": 354
-          },
-          "type": "painting"
+          type: `photo`,
+          image: {width: 1080, height: 720, url: "http://i.imgur.com/1KegWPz.jpg"},
         },
         {
-          "image": {
-            "url": "https://k32.kn3.net/5C7060EC5.jpg",
-            "width": 933,
-            "height": 700
-          },
-          "type": "painting"
+          type: `paintings`,
+          image: {width: 574, height: 864, url: "https://k34.kn3.net/4244FE50B.jpg"},
         },
         {
-          "image": {
-            "url": "https://i.imgur.com/1KegWPz.jpg",
-            "width": 1080,
-            "height": 720
-          },
-          "type": "photo"
-        }
+          type: `paintings`,
+          image: {width: 468, height: 354, url: "https://k42.kn3.net/D2F0370D6.jpg"},
+        },
       ]
     },
     {
@@ -860,21 +828,13 @@
       "question": "Угадайте для каждого изображения фото или рисунок?",
       "answers": [
         {
-          "image": {
-            "url": "https://i.imgur.com/DKR1HtB.jpg",
-            "width": 264,
-            "height": 700
-          },
-          "type": "photo"
+          type: `painting`,
+          image: {width: 750, height: 468, url: "https://k42.kn3.net/D660F0768.jpg"},
         },
         {
-          "image": {
-            "url": "https://k32.kn3.net/5C7060EC5.jpg",
-            "width": 933,
-            "height": 700
-          },
-          "type": "painting"
-        }
+          type: `photo`,
+          image: {width: 2048, height: 1365, url: "http://i.imgur.com/Gvq3jc2.jpg"},
+        },
       ]
     },
     {
@@ -882,13 +842,9 @@
       "question": "Угадай, фото или рисунок?",
       "answers": [
         {
-          "image": {
-            "url": "https://i.imgur.com/1KegWPz.jpg",
-            "width": 1080,
-            "height": 720
-          },
-          "type": "photo"
-        }
+          type: `photo`,
+          image: {width: 1264, height: 1864, url: "https://i.imgur.com/DiHM5Zb.jpg"},
+        },
       ]
     },
     {
@@ -896,29 +852,21 @@
       "question": "Найдите рисунок среди изображений",
       "answers": [
         {
-          "image": {
-            "url": "https://i.imgur.com/DiHM5Zb.jpg",
-            "width": 474,
-            "height": 700
-          },
-          "type": "photo"
+          type: `photo`,
+          image: {width: 1024, height: 576, url: "http://i.imgur.com/ncXRs5Y.jpg"},
         },
         {
-          "image": {
-            "url": "https://k42.kn3.net/D2F0370D6.jpg",
-            "width": 468,
-            "height": 354
-          },
-          "type": "painting"
+          type: `photo`,
+          image: {width: 640, height: 482, url: "http://i.imgur.com/gUeK0qE.jpg"},
         },
         {
-          "image": {
-            "url": "https://i.imgur.com/DiHM5Zb.jpg",
-            "width": 474,
-            "height": 700
+          type: `painting`,
+          image: {
+            width: 1500,
+            height: 1027,
+            url: "https://k40.kn3.net/6A7A24F7C.jpg",
           },
-          "type": "photo"
-        }
+        },
       ]
     },
     {
@@ -926,29 +874,17 @@
       "question": "Найдите фото среди изображений",
       "answers": [
         {
-          "image": {
-            "url": "https://k32.kn3.net/5C7060EC5.jpg",
-            "width": 933,
-            "height": 700
-          },
-          "type": "painting"
+          type: `photo`,
+          image: {width: 700, height: 687, url: "http://i.imgur.com/rY9u55S.jpg"},
         },
         {
-          "image": {
-            "url": "https://k42.kn3.net/D2F0370D6.jpg",
-            "width": 468,
-            "height": 354
-          },
-          "type": "painting"
+          type: `painting`,
+          image: {width: 618, height: 392, url: "https://k41.kn3.net/FF5009BF0.jpg"},
         },
         {
-          "image": {
-            "url": "https://i.imgur.com/DiHM5Zb.jpg",
-            "width": 474,
-            "height": 700
-          },
-          "type": "photo"
-        }
+          type: `painting`,
+          image: {width: 1129, height: 885, url: "https://k31.kn3.net/4BF6BBF0E.jpg"},
+        },
       ]
     },
     {
@@ -956,21 +892,13 @@
       "question": "Угадайте для каждого изображения фото или рисунок?",
       "answers": [
         {
-          "image": {
-            "url": "https://k32.kn3.net/5C7060EC5.jpg",
-            "width": 933,
-            "height": 700
-          },
-          "type": "photo"
+          type: `photo`,
+          image: {width: 700, height: 687, url: "http://i.imgur.com/rY9u55S.jpg"},
         },
         {
-          "image": {
-            "url": "https://k42.kn3.net/CF42609C8.jpg",
-            "width": 505,
-            "height": 700
-          },
-          "type": "painting"
-        }
+          type: `photo`,
+          image: {width: 1536, height: 2048, url: "http://i.imgur.com/dWTKNtv.jpg"},
+        },
       ]
     },
     {
@@ -978,13 +906,9 @@
       "question": "Угадай, фото или рисунок?",
       "answers": [
         {
-          "image": {
-            "url": "https://i.imgur.com/1KegWPz.jpg",
-            "width": 1080,
-            "height": 720
-          },
-          "type": "photo"
-        }
+          type: `painting`,
+          image: {width: 753, height: 532, url: "https://k41.kn3.net/CF684A85A.jpg"},
+        },
       ]
     },
   ];
@@ -1336,7 +1260,91 @@
     }
   }
 
+  const imageObject = {
+    paintings: [
+      // People
+      `https://k42.kn3.net/CF42609C8.jpg`,
+      `https://k38.kn3.net/AD92BA712.jpg`,
+      `https://k35.kn3.net/9ACD0AC56.jpg`,
+      `https://k32.kn3.net/42C83EF0A.jpg`,
+      `https://k39.kn3.net/B27A12A74.jpg`,
+      `https://k37.kn3.net/47F2604E3.jpg`,
+      `https://k38.kn3.net/20B8A2B58.jpg`,
+      `https://k42.kn3.net/F588C1419.jpg`,
+      `https://k43.kn3.net/956572A45.jpg`,
+      `https://k43.kn3.net/27AC45B8B.jpg`,
+      `https://k39.kn3.net/E07A38605.jpg`,
+      `https://k36.kn3.net/1619797DF.jpg`,
+      `https://k37.kn3.net/695A61B3C.jpg`,
+      `https://k37.kn3.net/0F4598844.jpg`,
+      `https://k35.kn3.net/2B925F44D.jpg`,
+      `https://k36.kn3.net/E9B401148.jpg`,
+      `https://k34.kn3.net/4244FE50B.jpg`,
+      // Animals
+      `https://k42.kn3.net/D2F0370D6.jpg`,
+      `https://k41.kn3.net/CF684A85A.jpg`,
+      `https://k37.kn3.net/51254FE87.jpg`,
+      `https://k43.kn3.net/1C4F7F5D5.jpg`,
+      `https://k41.kn3.net/FF5009BF0.jpg`,
+      // Nature
+      `https://k40.kn3.net/6A7A24F7C.jpg`,
+      `https://k31.kn3.net/4BF6BBF0E.jpg`,
+      `https://k42.kn3.net/D660F0768.jpg`,
+      `https://k32.kn3.net/5C7060EC5.jpg`,
+    ],
+    photos: [
+      // People
+      `http://i.imgur.com/ncXRs5Y.jpg`,
+      `http://i.imgur.com/gUeK0qE.jpg`,
+      `http://i.imgur.com/dWTKNtv.jpg`,
+      `https://i.imgur.com/NXlVX48.png`,
+      `http://i.imgur.com/rY9u55S.jpg`,
+      `http://i.imgur.com/1KegWPz.jpg`,
+      `http://i.imgur.com/Gvq3jc2.jpg`,
+      `http://i.imgur.com/Jvzh3pk.jpg`,
+      `https://i.redd.it/apoalsgb702y.jpg`,
+      `http://imgur.com/18zh0az.jpg`,
+      `https://i.redd.it/l08jq66vul2y.jpg`,
+      `http://i.imgur.com/UIHVp0P.jpg`,
+      `https://i.redd.it/n1vqglrr0o2y.jpg`,
+      // Animals
+      `http://i.imgur.com/eSlWjE7.jpg`,
+      `http://i.imgur.com/GbcYNPw.jpg`,
+      `http://i.imgur.com/jP4C1IS.jpg`,
+      `https://i.redd.it/bj70zjl196kx.jpg`,
+      `https://i.imgur.com/DiHM5Zb.jpg`,
+      `http://i.imgur.com/jBLSxQ9.png`,
+      // Nature
+      `http://i.imgur.com/q7rBB8Y.jpg`,
+      `http://i.imgur.com/167pXyY.jpg`,
+      `https://i.redd.it/cfw21jscl03y.jpg`,
+      `http://i.imgur.com/W5DNOVJ.jpg`,
+      `https://i.redd.it/0uvt7jy0hy2y.jpg`,
+      `http://i.imgur.com/zHRZW1C.jpg`,
+      `http://i.imgur.com/mz0MSsy.jpg`,
+      `http://i.imgur.com/DKR1HtB.jpg`,
+    ],
+  };
+
+  const preloadImage = function (url) {
+    return new Promise((resolve, reject) => {
+      const image = document.createElement(`img`);
+      image.onload = resolve(image.width);
+      image.onerror = reject;
+      image.src = url;
+
+    });
+  };
+
+  const getImage = () => {
+    Promise.all(imageObject.paintings.map((item) => preloadImage(item)))
+  // .then((it) => it())
+  .then(console.log);
+  };
+
   Application.showIntro();
+
+  getImage();
 
 }());
 
