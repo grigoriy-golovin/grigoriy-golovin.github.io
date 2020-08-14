@@ -2,81 +2,73 @@
 
 const cardData = [
   {
-    imgSrc: "img/sis-cities.png",
+    imgSrc: "img/sis-cities.webp",
     imgAlt: "sis-cities",
     title: "Sis cities",
     link: "https://grigoriy-golovin.github.io/six-cities",
     linkCode: "https://github.com/grigoriy-golovin/six-cities",
-    description: `Single Page Application выполненное на базе React. Современный сервис
-     для путешественников, которые не хотят переплачивать за аренду жилья.
-     В приложении можно получить актуальный
-      список предложений по аренде в одном из шести популярных городов.
-      Сортировка объектов и подробное
-       описание каждого из них помогут быстро
-       выбрать оптимальный вариант жилья.
-       Авторизованные пользователи могут
-        оставить отзыв и добавить приложение в избранное.`,
+    description: `Учебный проект на React. Сервис по поиску объявлений аренды жилья.
+    Мною выполнен только JS, верстка была предоставлена.`,
     techno: `React, Jest, Enzyme, Axios, React Router, Redux, Thunk, Reselect`,
   },
   {
-    imgSrc: "img/pixiel-hanter.png",
+    imgSrc: "img/pixiel-hanter.webp",
     imgAlt: "pixiel-hanter",
     title: "Pixiel hanter",
     link: "https://grigoriy-golovin.github.io/pixel-hunter",
     linkCode: "https://github.com/grigoriy-golovin/pixel-hunter",
 
-    description: `Сайт - игра, в которой надо угадывать что тебе сейчас
+    description: `Сайт - игра, в которой надо угадывать что
     показывают: фотография или рисунок?
     Игра написана javaScript версии ECMAScript 2015+
-     без использования framework по паттерну MVP`,
+     без использования framework по паттерну MVP
+     Мною выполнен только JS, верстка была предоставлена.`,
     techno: "ECMAScript 2015+, OOP, Promise, Fetch API",
   },
   {
-    imgSrc: "img/keksobooking.png",
+    imgSrc: "img/keksobooking.webp",
     imgAlt: "Keksbooking",
     title: "Keksbooking",
     link: "https://grigoriy-golovin.github.io/Keksbooking",
     linkCode: "https://github.com/grigoriy-golovin/booking",
-    description: `Сервис размещения объявлений об аренде
-     недвижимости в Токио. Пользователи делятся информацией
-     о своём объекте недвижимости, размещают фотографии, указывают
-     адрес, перемещая метку по карте города. Кроме этого, можно
-      посмотреть на объявления,
-     размещённые другими пользователями.`,
+    description: `Учебный проект на ECMAScript 5.
+     Сервис размещения объявлений об аренде
+     недвижимости в Токио.
+     Мною выполнен только JS, верстка была предоставлена.`,
     techno: "DOM API, XMLHttpRequest, FormData",
   },
   {
-    imgSrc: "img/culture-news.png",
+    imgSrc: "img/culture-news.webp",
     imgAlt: "culture-news",
     title: "Culture news",
     link: "https://grigoriy-golovin.github.io/culture-news",
     linkCode: "https://github.com/grigoriy-golovin/culture-news",
-    description: `Вёрстка сайта с новостями культуры.
-    Реализованна адаптивная и резиновая вёрстка с помощью Grid layout.`,
+    description: `Учебная вёрстка главной страницы сайта с новостями культуры.
+    Реализованна адаптивная и резиновая вёрстка с помощью Grid layout.
+     На JS реализованны только слайдеры, выпадающее меню и заполнение контента в template.`,
     techno: "Less, Gulp, Flex, Picture, БЭМ, Node.js",
   },
   {
-    imgSrc: "img/pink.png",
+    imgSrc: "img/pink.webp",
     imgAlt: "pink",
     title: "Pink",
     link: "https://grigoriy-golovin.github.io/pink",
     linkCode: "https://github.com/grigoriy-golovin/pink",
-    description: `Вёрстка сайта о приложении Pink.
-     Это приложение позволит раскрасить серые будни в яркие
-     краски буквально в один клик.
+    description: `Учебная вёрстка сайта о приложении Pink.
      Вёрстка выполнена адоптивно с фиксированной сеткой
-     на три размера экрана на препроцессоре Less, сборка и оптимизация
-     выполнены с помощью Gulp.`,
+     на три размера экрана с использованием препроцессоре Less, сборка и оптимизация
+     выполнены с помощью Gulp. На JS реализованны только слайдеры и выпадающее меню.`,
     techno: "Less, Gulp, Flex, Picture, SVG-спрайт, WebP, БЭМ, Node.js",
   },
   {
-    imgSrc: "img/light.png",
+    imgSrc: "img/light.webp",
     imgAlt: "light",
     title: "Light",
     link: "https://grigoriy-golovin.github.io/light",
     linkCode: "https://github.com/grigoriy-golovin/trialWork",
-    description: `Простая вёрстка главной страницы сайта компании
-     по продаже светового оборудования.`,
+    description: `Моя первая учебная вёрстка. Выполнена одна страница сайта компании
+     по продаже светового оборудования.
+     Без реализации динамических элементов интерфейса на JS.`,
     techno: "HTML, CSS, Flex",
   },
 ];
@@ -98,7 +90,12 @@ const createSlid = function (data, template) {
   slid.querySelector(".card__link--site").href = data.link;
   slid.querySelector(".card__link--code").href = data.linkCode;
 
-  slid.querySelector("img").onclick = () => {
+  slid.querySelector(".card__text").onclick = () => {
+    slid.classList.add(`card--active`);
+    bgBlack.classList.add(`card__bg-black--active`)
+  };
+
+  slid.querySelector(".card__img-wrapper").onclick = () => {
     slid.classList.add(`card--active`);
     bgBlack.classList.add(`card__bg-black--active`)
   };
