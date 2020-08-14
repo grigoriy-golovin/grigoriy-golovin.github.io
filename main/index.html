@@ -166,7 +166,7 @@
         <li>Динамические эффекты</li>
         <li>Препроцессор Less</li>
       </ul>
-      <a href="https://htmlacademy.ru/profile/id1041559">ссылка профиль в HTML Academy</a>
+      <a href="https://htmlacademy.ru/profile/id1041559">ссылка на профиль в HTML Academy</a>
 
     </section>
   </main>
@@ -175,13 +175,24 @@
   </footer>
   <template>
     <li class="portfolio__item card">
-      <div class="card__img-wrapper">
+      <button class="card__but-close"></button>
+      <button class="card__img-wrapper">
         <img class="card__img" src="" alt="" width="150">
+      </button>
+      <h3 class="card__title"></h3>
+      <p class="card__text">
+        <span class="card__description"></span>
+        <br>
+        <b>Использованные технологии:</b>
+        <span class="card__text-techno"></span>
+      </p>
+      <div class="card__link-wrapper">
+        <a class="card__link card__link--site" href="">Перейти на сайт</a>
+        <a class="card__link card__link--code" href="">Смотреть код</a>
       </div>
-      <p class="card__text"></p>
-      <a class="card__link" href="">Перейти на сайт</a>
     </li>
   </template>
+  <div class="card__bg-black"></div>
   <script type="text/javascript" src="js/template.js"></script>
   <script type="text/javascript" src="js/navMenuScript.js"></script>
 </body>
