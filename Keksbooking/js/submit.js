@@ -9,6 +9,14 @@
 		pin.style.top = "375px";
 		form.reset();
 		window.renderAddress();
+		var okDiv = document.createElement("div");
+		okDiv.textContent = "Данные успешно отправлены";
+		okDiv.classList.add("form__ok");
+		var submitButton = document.querySelector(".form__submit");
+		submitButton.after(okDiv);
+		setTimeout(function () {
+			okDiv.remove();
+		}, 4000);
 	};
 
 	var onError = function (message) {
