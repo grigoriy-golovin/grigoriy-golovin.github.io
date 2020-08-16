@@ -475,6 +475,10 @@ a {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg); } }
 
+button:active,
+button:focus {
+  outline: none; }
+
 /*
  * Стили для кнопки-звёздочки
  */
