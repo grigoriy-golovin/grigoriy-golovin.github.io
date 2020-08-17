@@ -2,7 +2,7 @@
 
 const cardData = [
   {
-    imgSrc: "img/sis-cities.webp",
+    imgSrc: "img/sis-cities.png",
     imgAlt: "sis-cities",
     title: "Sis cities",
     link: "https://grigoriy-golovin.github.io/six-cities",
@@ -12,7 +12,7 @@ const cardData = [
     techno: `React, Jest, Enzyme, Axios, React Router, Redux, Thunk, Reselect`,
   },
   {
-    imgSrc: "img/pixiel-hanter.webp",
+    imgSrc: "img/pixiel-hanter.png",
     imgAlt: "pixiel-hanter",
     title: "Pixiel hanter",
     link: "https://grigoriy-golovin.github.io/pixel-hunter",
@@ -26,7 +26,7 @@ const cardData = [
     techno: "ECMAScript 2015+, OOP, Promise, Fetch API",
   },
   {
-    imgSrc: "img/keksobooking.webp",
+    imgSrc: "img/keksobooking.png",
     imgAlt: "Keksbooking",
     title: "Keksbooking",
     link: "https://grigoriy-golovin.github.io/Keksbooking",
@@ -38,7 +38,7 @@ const cardData = [
     techno: "DOM API, XMLHttpRequest, FormData",
   },
   {
-    imgSrc: "img/culture-news.webp",
+    imgSrc: "img/culture-news.png",
     imgAlt: "culture-news",
     title: "Culture news",
     link: "https://grigoriy-golovin.github.io/culture-news",
@@ -49,7 +49,7 @@ const cardData = [
     techno: "Less, Gulp, Flex, Picture, БЭМ, Node.js",
   },
   {
-    imgSrc: "img/pink.webp",
+    imgSrc: "img/pink.png",
     imgAlt: "pink",
     title: "Pink",
     link: "https://grigoriy-golovin.github.io/pink",
@@ -58,10 +58,10 @@ const cardData = [
      Вёрстка выполнена адоптивно с фиксированной сеткой
      на три размера экрана с использованием препроцессоре Less, сборка и оптимизация
      выполнены с помощью Gulp. На JS реализованны только слайдеры и выпадающее меню.`,
-    techno: "Less, Gulp, Flex, Picture, SVG-спрайт, WebP, БЭМ, Node.js",
+    techno: "Less, Gulp, Flex, Picture, SVG-спрайт, png, БЭМ, Node.js",
   },
   {
-    imgSrc: "img/light.webp",
+    imgSrc: "img/light.png",
     imgAlt: "light",
     title: "Light",
     link: "https://grigoriy-golovin.github.io/light",
